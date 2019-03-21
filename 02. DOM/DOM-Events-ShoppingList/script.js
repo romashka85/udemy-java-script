@@ -11,6 +11,17 @@ function createListElement() {
 	li.appendChild(document.createTextNode(input.value));
 	ul.appendChild(li);
 	input.value = "";
+
+	// Adding delete button and removing li el
+
+	var deleteButton = document.createElement('button');
+	deleteButton.textContent = 'Delete';
+	li.appendChild(deleteButton);
+	deleteButton.addEventListener('click', deleteListElement);
+
+	function deleteListElement(event){
+		event.target.parentElement.remove('li');
+	}
 }
 
 function addListAfterClick() {
@@ -28,3 +39,17 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
+// EXERCISES-------
+
+// add toggle .done off/on
+
+ul.addEventListener('click', toggleDone);
+function toggleDone(event){
+	if (event.target.nodeName === 'LI'){
+		var  li = event.target;
+		li.classList.toggle('done');
+	}
+}
+
+
