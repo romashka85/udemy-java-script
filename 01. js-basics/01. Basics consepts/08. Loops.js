@@ -26,7 +26,7 @@ var countOne = 10;
 
 while (countOne > 10){
    console.log(countOne);
-   count--;
+   countOne--;
 };
 
 var countTwo = 10;

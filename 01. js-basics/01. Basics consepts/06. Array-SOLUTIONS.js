@@ -7,10 +7,10 @@ array.shift();
 // 2. Sort the array in order. 
 array.sort();
 
-// 3. Put "Kiwi" at the end of the array.
+// 3. Put "Kiwi" at the end of the array. ["Apples", "Blueberries", "Oranges", "Kiwi"]
 array.push("Kiwi");
 
-// 4. Remove "Apples" from the array.
+// 4. Remove "Apples" from the array.  ["Blueberries", "Oranges", "kivi"]
 array.splice(0, 1);
 
 // 5. Sort the array in reverse order. 

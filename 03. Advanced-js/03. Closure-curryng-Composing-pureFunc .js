@@ -7,12 +7,14 @@ const sum = (a, b) => a + b
 const addTo = x => y => x + y
 var addToTen = addTo(10)
 addToTen(3) // returns 13
+//closure - a function ran. The function executed. It's never going to execute again.
+// But it's going to remember that there are references to those variables
+// so the child scope always has access to the parent scope.
 
 //Currying: What does the last line return?
 const sum = (a, b) => a + b
 const curriedSum = (a) => (b) => a + b
 curriedSum(30)(1) // 31
-
 
 //Currying: What does the last line return?
 const sum = (a, b) => a + b
@@ -28,4 +30,5 @@ compose(add1, add5)(10) // 16
 
 //What are the two elements of a pure function?
 1. Deterministic --> always produces the same results given the same inputs
-2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.
+2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. 
+It must only depend on its input elements.

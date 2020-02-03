@@ -8,7 +8,7 @@ function inputLength() {
 
 function createListElement() {
 	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(input.value));
+	li.appendChild(document.createTextNode(input.value)); 	// li.textContent = input.value;
 	ul.appendChild(li);
 	input.value = "";
 

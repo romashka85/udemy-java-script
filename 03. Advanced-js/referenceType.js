@@ -5,8 +5,8 @@ let obj = {
         deep: 'try and copy me'
     }
 };
-let clone = Object.assign({}, obj);
-let clone2 = {...obj};
+let clone = Object.assign({}, obj);  //copy the object
+let clone2 = {...obj};   //spred operator
 let superClone = JSON.parse(JSON.stringify(obj));
 
 obj.c.deep = 'haaaaa';
